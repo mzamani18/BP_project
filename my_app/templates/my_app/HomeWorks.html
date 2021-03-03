@@ -1,0 +1,30 @@
+{% block content %}
+  <h2>Answers</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Download</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for answer in answers %}
+        <tr>
+          <td>{{answer.title }}</td>
+          <td>{{answer.author }}</td>
+          <td>
+            <a href="{{answer.pdf.url }}" class="btn btn-primary btn-sm" target="_blank">
+              downlod PDF
+            </a>
+
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+
+<h2>add homework</h2>
+<a href="{% url 'HomeWorks' %}"> Upload Homework </a>
