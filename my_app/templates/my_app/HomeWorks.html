@@ -5,14 +5,18 @@
     <thead>
       <tr>
         <th>Title</th>
+        <th>studentNumber</th>
         <th>Author</th>
         <th>Download</th>
+        <th>Score</th>
+        <th>Date</th>
       </tr>
     </thead>
     <tbody>
       {% for answer in answers %}
         <tr>
           <td>{{answer.title }}</td>
+          <td>{{answer.studentNumber }}</td>
           <td>{{answer.author }}</td>
           <td>
             <a href="{{answer.pdf.url }}" class="btn btn-primary btn-sm" target="_blank">
@@ -20,11 +24,33 @@
             </a>
 
           </td>
+          <td>
+            <input type="number" id="myNumber" value="0">
+            <button onclick="myFunction()">submit</button>
+            <p id="demo"></p>
+
+            <script>
+            function myFunction() {
+            var x = document.getElementById("myNumber").value;
+            document.getElementById("demo").innerHTML = x;
+            }
+            </script>
+          </td>
         </tr>
       {% endfor %}
     </tbody>
   </table>
 {% endblock %}
 
-<h2>add homework</h2>
-<a href="{% url 'HomeWorks' %}"> Upload Homework </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 >Upload HomeWok </h1>
+
+<a href="{% url 'Upload_HomeWork' %}"> upload HomeWork </a>
+</body>
+</html>

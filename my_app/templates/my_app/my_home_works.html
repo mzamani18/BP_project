@@ -1,0 +1,29 @@
+{% block content %}
+  <h2>Home works</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>deadline</th>
+        <th>tozihat</th>
+        <th>Download</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for homework in homeworks %}
+        <tr>
+          <td>{{homework.title }}</td>
+          <td>{{homework.deadline }}</td>
+          <td>{{homework.tozihat }}</td>
+          <td>
+            <a href="{{homework.pdf.url }}" class="btn btn-primary btn-sm" target="_blank">
+              downlod PDF
+            </a>
+
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
