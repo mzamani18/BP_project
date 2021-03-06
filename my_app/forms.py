@@ -1,5 +1,5 @@
 from django import forms
-from .models import Answer, HomeWork ,Video
+from .models import Answer, HomeWork, Videos
 
 
 class answerform(forms.ModelForm):
@@ -14,7 +14,8 @@ class homeworkform(forms.ModelForm):
         fields = ('title', 'deadline','tozihat','pdf')
 
 
-#class videoform(forms.ModelForm):
+class videoform(forms.ModelForm):
     class Meta:
-        model = Video
-        fields= ('title', 'video' )
+        model = Videos
+        fields = ('title', 'video')
+

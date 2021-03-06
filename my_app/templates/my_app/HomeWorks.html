@@ -1,5 +1,5 @@
 {% block content %}
-  <h2>Answers</h2>
+  <h1>Answers</h1>
 
   <table class="table">
     <thead>
@@ -36,6 +36,7 @@
             }
             </script>
           </td>
+          <td>{{answer.Date }}</td>
         </tr>
       {% endfor %}
     </tbody>
@@ -51,6 +52,6 @@
 <body>
 <h1 >Upload HomeWok </h1>
 
-<a href="{% url 'Upload_HomeWork' %}"> upload HomeWork </a>
+<a href="{% url 'Upload_HomeWork' %}"> <h3>upload HomeWork </h3></a>
 </body>
 </html>

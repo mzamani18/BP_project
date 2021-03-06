@@ -5,8 +5,11 @@ from django.views import generic
 from django.views.generic import ListView, CreateView
 from django.core.files.storage import FileSystemStorage
 from .forms import answerform,homeworkform
-from .models import Answer, HomeWork
+from .models import Answer, HomeWork, Videos
 from django.urls import reverse_lazy
+
+
+
 
 class SignUpView(generic.CreateView):
     form_class = UserCreationForm
@@ -15,15 +18,15 @@ class SignUpView(generic.CreateView):
 
 
 class HomeWorks(ListView):
-    model= Answer
+    model = Answer
     template_name = 'my_app/HomeWorks.html'
     context_object_name = 'answers'
 
 
 class uploadAnswer(CreateView):
-    model =  Answer
+    model = Answer
     fields = ('title', 'studentNumber', 'author', 'pdf')
-    success_url = reverse_lazy('uploadAnswer')
+    success_url = reverse_lazy('success_upload')
     template_name = 'my_app/uploadAnswer.html'
 
 
@@ -36,8 +39,21 @@ class my_home_works(ListView):
 class Upload_HomeWork(CreateView):
     model = HomeWork
     fields = ('title', 'deadline','tozihat','pdf')
-    success_url = reverse_lazy('Upload_HomeWork')
+    success_url = reverse_lazy('success_upload')
     template_name = 'my_app/Upload_HomeWork.html'
+
+
+class uploadVideo(CreateView):
+    model = Videos
+    fields = ('title', 'video')
+    success_url = reverse_lazy('success_upload')
+    template_name = 'my_app/uploadVideo.html'
+
+
+class watchVideo(ListView):
+    model = Videos
+    template_name = 'my_app/watchVideo.html'
+    context_object_name = 'videos'
 
 
 
@@ -63,15 +79,5 @@ def studentPage(request):
     return render(request, 'my_app/student.html')
 
 
-def uploadVideo(request):
-    return render(request, 'my_app/uploadVideo.html')
-
-
-def watchVideo(request):
-    return render(request, 'my_app/watchVideo.html')
-
-
-def student_panel(request):
-    return HttpResponse('welcome')
-
-
+def success_upload(request):
+    return HttpResponse('<h2>file Uploaded Successfully</h2>')

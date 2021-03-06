@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdbccfd0-9c90-4ea6-96ac-aa21646a2e60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/HomeWorks/pdfs/homeworks-01_i4F3T9o.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/HomeWorks/pdfs/homeworks-01_pERZqex.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/my_home_works/pdfs/homeworks-01.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/my_home_works/pdfs/homeworks-01_EfgIsBH.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/my_home_works/pdfs/homeworks-01_ImOzDcG.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/my_home_works/pdfs/homeworks-01_UuM4Mag.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/my_home_works/pdfs/homeworks-01_XqCY6Kp.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/my_home_works/pdfs/homeworks-01_vlNVsYM.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/my_home_works/pdfs/homeworks-01_y1KJbp9.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/my_home_works/pdfs/homeworks-01_yxunIVJ.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0004_auto_20210304_0542.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0005_homework.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0006_homework_deadline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0007_homework_tozihat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/migrations/0008_answer_studentnumber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/templates/my_app/Upload_HomeWork.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/templates/my_app/my_home_works.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/HomeWorks/pdfs/Zamani-610399135-HW1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/HomeWorks/pdfs/Zamani-610399135-HW1_YycgN6W.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/HomeWorks/pdfs/Zamani-610399135-HW1_gps9Kj8.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/watchvideo/mp4/WhatsApp_Video_2021-03-06_at_09.06.5.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/watchvideo/mp4/WhatsApp_Video_2021-03-06_at_09.06.53.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/watchvideo/mp4/WhatsApp_Video_2021-03-06_at_09.06.53_GcgJgnp.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/watchvideo/mp4/Zamani-610399135-HW1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0009_videos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0010_delete_videos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0011_videos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/migrations/0012_answer_date.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/templates/my_app/HomeWorks.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/templates/my_app/HomeWorks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/templates/my_app/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/templates/my_app/student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/templates/my_app/uploadVideo.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/templates/my_app/uploadVideo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/templates/my_app/watchVideo.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/templates/my_app/watchVideo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/views.py" afterDir="false" />
     </list>
