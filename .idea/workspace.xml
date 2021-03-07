@@ -4,13 +4,9 @@
     <list default="true" id="fdbccfd0-9c90-4ea6-96ac-aa21646a2e60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/watchvideo/mp4/WhatsApp_Video_2021-03-06_at_09.06.53.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/watchvideo/mp4/WhatsApp_Video_2021-03-06_at_09.06.53_GcgJgnp.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/watchvideo/mp4/Zamani-610399135-HW1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/watchvideo/mp4/Zamani-610399135-HW1_2EYDZta.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/watchvideo/mp4/Zamani-610399135-HW1_Njr4TEf.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/watchvideo/mp4/Zamani-610399135-HW1_ichbw9h.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/templates/my_app/score_professor.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/templates/my_app/score_professor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

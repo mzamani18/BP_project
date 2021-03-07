@@ -1,13 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
-from django.views import generic
+from django.views import generic, View
 from django.views.generic import ListView, CreateView
 from django.core.files.storage import FileSystemStorage
 from .forms import answerform,homeworkform
 from .models import Answer, HomeWork, Videos
 from django.urls import reverse_lazy
-
 
 
 
@@ -64,6 +63,7 @@ class uploadVideo(CreateView):
         success_url = reverse_lazy('unsuccess_upload')
         template_name = 'my_app/uploadVideo.html'
 
+
 class watchVideo(ListView):
     model = Videos
     template_name = 'my_app/watchVideo.html'
@@ -102,5 +102,5 @@ def unsuccess_upload(request):
 
 
 def score_professor(request):
-    return render(request,'my_app/score_professor.html')
+    return render(request, 'my_app/score_professor.html')
 

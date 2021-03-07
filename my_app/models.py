@@ -20,6 +20,7 @@ class HomeWork(models.Model):
     tozihat = models.CharField(max_length=512,null=True)
     pdf = models.FileField(upload_to='my_home_works/pdfs/')
 
+
     def __str__(self):
         return self.title
 
@@ -27,6 +28,7 @@ class HomeWork(models.Model):
 class Videos(models.Model):
     title= models.CharField(max_length=100)
     video= models.FileField(upload_to='watchvideo/mp4/')
+
 
     def __str__(self):
         return self.title
