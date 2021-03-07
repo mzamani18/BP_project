@@ -46,9 +46,13 @@ class Upload_HomeWork(CreateView):
 class uploadVideo(CreateView):
     model = Videos
     fields = ('title', 'video')
-    success_url = reverse_lazy('success_upload')
-    template_name = 'my_app/uploadVideo.html'
-
+    Videos.title= str(Videos.title)
+    if Videos.title[-1] == '4':
+        success_url = reverse_lazy('success_upload')
+        template_name = 'my_app/uploadVideo.html'
+    else:
+        success_url = reverse_lazy('unsuccess_upload')
+        template_name = 'my_app/uploadVideo.html'
 
 class watchVideo(ListView):
     model = Videos
@@ -67,8 +71,7 @@ def home_page(raquest):
 
 
 def check_role(request):
-    resp = render(request, 'check_role.html')
-    return resp
+    return render(request, 'check_role.html')
 
 
 def professorPage(request):
@@ -81,3 +84,12 @@ def studentPage(request):
 
 def success_upload(request):
     return HttpResponse('<h2>file Uploaded Successfully</h2>')
+
+
+def unsuccess_upload(request):
+    return HttpResponse('<h2> you should upload mp4 file in this field</h2>')
+
+
+def score_professor(request):
+    return render(request,'my_app/score_professor.html')
+

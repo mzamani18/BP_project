@@ -1,6 +1,6 @@
 {% block content %}
   <h1>Answers</h1>
-
+  <title>Home Works</title>
   <table class="table">
     <thead>
       <tr>
@@ -20,21 +20,12 @@
           <td>{{answer.author }}</td>
           <td>
             <a href="{{answer.pdf.url }}" class="btn btn-primary btn-sm" target="_blank">
-              downlod PDF
+              Download PDF
             </a>
 
           </td>
           <td>
-            <input type="number" id="myNumber" value="0">
-            <button onclick="myFunction()">submit</button>
-            <p id="demo"></p>
-
-            <script>
-            function myFunction() {
-            var x = document.getElementById("myNumber").value;
-            document.getElementById("demo").innerHTML = x;
-            }
-            </script>
+            <a href="{% url 'score_professor' %}"> insert a score</a>
           </td>
           <td>{{answer.Date }}</td>
         </tr>
@@ -52,6 +43,8 @@
 <body>
 <h1 >Upload HomeWok </h1>
 
-<a href="{% url 'Upload_HomeWork' %}"> <h3>upload HomeWork </h3></a>
+<a href="{% url 'Upload_HomeWork' %}"> <h3>Upload HomeWork </h3></a>
 </body>
 </html>
+
+

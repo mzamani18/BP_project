@@ -1,5 +1,6 @@
 {% block content %}
   <h2>upload HomeWork</h2>
+  <title>upload HomeWork</title>
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p}}
