@@ -9,7 +9,6 @@ class Answer(models.Model):
     Date= models.DateTimeField(auto_now=True,null=True)
 
 
-
     def __str__(self):
         return self.title
 

@@ -26,8 +26,13 @@ class HomeWorks(ListView):
 class uploadAnswer(CreateView):
     model = Answer
     fields = ('title', 'studentNumber', 'author', 'pdf')
-    success_url = reverse_lazy('success_upload')
-    template_name = 'my_app/uploadAnswer.html'
+    Answer.title= str(Answer.title)
+    if Answer.title[-1]=='f':
+        success_url = reverse_lazy('success_upload')
+        template_name = 'my_app/uploadAnswer.html'
+    else:
+        success_url = reverse_lazy('unsuccess_upload')
+        template_name = 'my_app/uploadAnswer.html'
 
 
 class my_home_works(ListView):
@@ -39,8 +44,13 @@ class my_home_works(ListView):
 class Upload_HomeWork(CreateView):
     model = HomeWork
     fields = ('title', 'deadline','tozihat','pdf')
-    success_url = reverse_lazy('success_upload')
-    template_name = 'my_app/Upload_HomeWork.html'
+    HomeWork.title= str(HomeWork.title)
+    if HomeWork.title[-1]=='f':
+        success_url = reverse_lazy('success_upload')
+        template_name = 'my_app/Upload_HomeWork.html'
+    else:
+        success_url = reverse_lazy('unsuccess_upload')
+        template_name = 'my_app/Upload_HomeWork.html'
 
 
 class uploadVideo(CreateView):
@@ -87,7 +97,8 @@ def success_upload(request):
 
 
 def unsuccess_upload(request):
-    return HttpResponse('<h2> you should upload mp4 file in this field</h2>')
+    return HttpResponse('<h1>Error</h1>'
+        '<h2> you should upload mp4/pdf file in this field</h2>')
 
 
 def score_professor(request):
